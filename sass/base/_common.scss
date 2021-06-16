@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  color: $primary-text-color;
+  background: $primary-white-color;
+
+  font-family: $main-font;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}

@@ -1,0 +1,141 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form__title {
+  display: block;
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+}
+
+.modal-form__field {
+  position: relative;
+  display: block;
+  margin-top: 4px;
+  color: $title-text-color;
+}
+
+.modal-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal-form__input:focus + & {
+    color: $accent-color;
+  }
+}
+
+.modal-form__label {
+  margin-bottom: 12px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $primary-text-color;
+}
+
+.modal-form__input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border: 1px solid $accent-color;
+    outline: none;
+  }
+}
+
+.modal-form--label {
+  margin-bottom: 20px;
+}
+
+.modal-form--textarea {
+  height: 120px;
+  padding: 12px 16px;
+  margin-top: 4px;
+  resize: none;
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.form-checkbox-policy {
+  margin-bottom: 25px;
+
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  &::before {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    content: '';
+    border: 2px solid #212121;
+    border-radius: 2px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .form-checkbox:checked + & {
+      background-image: url('../img/icon-checked.svg');
+      background-position: center;
+      background-size: cover;
+      background-color: $accent-color;
+      border: none;
+    }
+    .form-checkbox:focus + & {
+      border-color: $accent-color;
+    }
+
+    .form-checkbox:focus:checked + & {
+      outline: auto $title-text-color;
+    }
+  }
+}
+
+.form-checkbox-policy__link {
+  color: $accent-color;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.form-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 55px 10px 55px;
+  margin: 0 auto;
+
+  @extend %button;
+
+  color: $primary-white-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
