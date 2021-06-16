@@ -316,6 +316,12 @@ body {
   display: flex;
 }
 
+@media (max-width: 767px) {
+  .page-nav__list {
+    display: none;
+  }
+}
+
 .page-nav__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -358,6 +364,12 @@ body {
   display: flex;
 }
 
+@media (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+
 .contacts__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -387,6 +399,17 @@ body {
   border: 0;
   margin-right: 10px;
   fill: currentColor;
+}
+
+.menu-button {
+  background-color: #ffffff;
+  border-style: none;
+}
+
+@media screen and (min-width: 767px) {
+  .menu-button {
+    display: none;
+  }
 }
 
 .hero-section {
