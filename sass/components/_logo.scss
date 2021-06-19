@@ -11,10 +11,17 @@
   }
 }
 
-.page-nav__logo {
-  margin-right: 93px;
+.page-header__logo {
+  @media screen and (max-width: 767.5px) {
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 80px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
-
 .animate__rubberBand {
   animation-duration: 600ms;
 }

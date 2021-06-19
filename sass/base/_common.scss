@@ -15,6 +15,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -25,6 +27,10 @@ body {
   font-weight: normal;
   font-style: normal;
   letter-spacing: 0.03em;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 .list {

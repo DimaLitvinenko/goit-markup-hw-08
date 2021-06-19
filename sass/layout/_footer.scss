@@ -5,8 +5,13 @@
 }
 
 .page-footer--container {
-  display: flex;
-  align-items: baseline;
+  @media (max-width: 1199.5px) {
+    text-align: center;
+  }
+  @media (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .page-footer--logo {
@@ -16,9 +21,27 @@
   color: $primary-white-color;
 }
 
+.wrapper {
+  @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 .address-container {
-  align-items: baseline;
-  margin-right: 70px;
+  @media (max-width: 767.5px) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-right: 70px;
+    align-items: baseline;
+  }
 }
 
 .address-list__item:not(:last-child) {
@@ -47,31 +70,31 @@
 }
 
 .join {
-  margin-right: 93px;
+  @media screen and (max-width: 767.5px) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .join__title {
   @extend .subscribe__title;
 }
 
-.subscribe__title {
-  display: block;
-  margin-bottom: 20px;
-  @include title-font($fw: bold, $lh: 1.14);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: $primary-white-color;
-}
-
 .social {
+  @media (max-width: 767.5px) {
+    justify-content: center;
+  }
   display: flex;
 }
 
-.social__item:not(:last-child) {
-  margin-right: 10px;
+.social__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
-
 .social__link {
   display: flex;
   justify-content: center;
@@ -97,10 +120,33 @@
 }
 
 .subscribe-form {
-  display: flex;
+  @media (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.subscribe__title {
+  display: block;
+  margin-bottom: 20px;
+  @include title-font($fw: bold, $lh: 1.14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $primary-white-color;
 }
 
 .subscribe-form__input {
+  @media screen and (max-width: 1199.5px) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 470px) {
+    width: 100%;
+  }
+
   width: 358px;
   min-height: 50px;
   padding-left: 16px;
@@ -133,12 +179,18 @@
 }
 
 .subscribe-form__button {
+  @media (min-width: 1200px) {
+    margin-left: 12px;
+  }
+  @media (max-width: 1199px) {
+    margin: 0 auto;
+  }
+
   display: flex;
   align-items: center;
   min-width: 200px;
   height: 50px;
   padding: 10px 28px;
-  margin-left: 12px;
 
   @extend %button;
 

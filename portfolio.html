@@ -16,7 +16,7 @@
     <header class="page-header">
         <div class="container header-container">
             <nav class="page-nav">
-                <a href="./index.html" class="logo page-nav__logo animate__rubberBand">
+                <a href="./index.html" class="logo page-header__logo animate__rubberBand">
                     <span class="logo__web">Web</span>Studio
                 </a>
     
@@ -51,9 +51,10 @@
                     </a>
                 </li>
             </ul>
-            <button class="menu-button" type="button">
-                <svg class="menu-button__icon" width="24" height="16">
-                    <use href="./img/symbol-defs.svg#menu-icon"></use>
+            <button class="mobile-button" type="button" data-menu-button aria-expanded="false">
+                <svg class="mobile-button__icon" width="24" height="16" aria-label="Переключатель мобильного меню">
+                    <use class="mobile-button__menu" href="./img/symbol-defs.svg#menu-icon"></use>
+                    <use class="mobile-button__cross" href="./img/symbol-defs.svg#cross"></use>
                 </svg>
             </button>
         </div>
@@ -234,63 +235,70 @@
     <!-- Footer -->
     <footer class="page-footer">
         <div class="container page-footer--container">
-            <div class="address-container">
-                <a href="./index.html" class="logo page-footer--logo animate__rubberBand">
-                    <span class="logo__web">Web</span>Studio
-                </a>
-            
-                <address class="address">
-                    <ul class="address-list list">
-                        <li class="address-list__item">
-                            <a href="https://goo.gl/maps/jZqZyX6BY9Eupkvq6" target="_blank" rel="noopener noreferrer" class="address-list__link address-list--link">
-                                г. Киев, пр-т Леси Украинки, 26
+            <div class="wrapper">
+                <div class="address-container">
+                    <a href="./index.html" class="logo page-footer--logo animate__rubberBand">
+                        <span class="logo__web">Web</span>Studio
+                    </a>
+                
+                    <address class="address">
+                        <ul class="address-list list">
+                            <li class="address-list__item">
+                                <a href="https://goo.gl/maps/jZqZyX6BY9Eupkvq6" target="_blank" rel="noopener noreferrer"
+                                    class="address-list__link address-list--link">
+                                    г. Киев, пр-т Леси Украинки, 26
+                                </a>
+                            </li>
+                            <li class="address-list__item">
+                                <a href="mailto:info@devstudio.com" class="address-list__link">
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="address-list__item">
+                                <a href="tel:+380961111111" class="address-list__link">
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="join">
+                    <b class="join__title">Присоединяйтесь</b>
+                    <ul class="social list">
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social__link"
+                                aria-label="instagram">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="./img/symbol-defs.svg#instagram"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="address-list__item">
-                            <a href="mailto:info@devstudio.com" class="address-list__link">
-                                info@devstudio.com
+                        <li class="social__item">
+                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social__link"
+                                aria-label="twitter">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="./img/symbol-defs.svg#twitter"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="address-list__item">
-                            <a href="tel:+380961111111" class="address-list__link">
-                                +38 096 111 11 11
+                        <li class="social__item">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social__link"
+                                aria-label="facebook">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="./img/symbol-defs.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social__link"
+                                aria-label="linkedin">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="./img/symbol-defs.svg#linkedin"></use>
+                                </svg>
                             </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-            <div class="join">
-                <b class="join__title">Присоединяйтесь</b>
-                <ul class="social list">
-                    <li class="social__item">
-                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="instagram">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./img/symbol-defs.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="twitter">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./img/symbol-defs.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="facebook"> 
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./img/symbol-defs.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="linkedin">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./img/symbol-defs.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <form class="subscribe">
                 <label for="e-mail" class="subscribe__title">Подпишитесь на рассылку</label>
