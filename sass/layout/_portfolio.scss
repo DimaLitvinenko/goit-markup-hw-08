@@ -106,11 +106,12 @@
 }
 
 .projects-cards__desc {
-  padding: 77px 24px;
-
   @media screen and (max-width: 400px) {
     padding: 40px 24px;
     height: 100%;
+  }
+  @media screen and (max-width: 767.5px) {
+    padding: 60px 24px;
   }
 
   @media screen and (min-width: 768px) {

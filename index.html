@@ -15,51 +15,20 @@
     <!-- Header -->
     <header class="page-header">
         <div class="container header-container">
-            <nav class="page-nav">
-                <a href="./index.html" class="logo page-header__logo animate__rubberBand">
-                    <span class="logo__web">Web</span>Studio
-                </a>
+            <a href="./index.html" class="logo page-header__logo animate__rubberBand">
+                <span class="logo__web">Web</span>Studio
+            </a>
 
-                <ul class="page-nav__list list">
-                    <li class="page-nav__item">
-                        <a href="./index.html" class="page-nav__link page-nav--current">Студия</a>
-                    </li>
-                    <li class="page-nav__item">
-                        <a href="./portfolio.html" class="page-nav__link">Портфолио</a>
-                    </li>
-                    <li class="page-nav__item">
-                        <a href="#!" class="page-nav__link">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <ul class="contacts list">
-                <li class="contacts__item">
-                    <a href="mailto:info@devstudio.com" class="contacts__link">
-                        <svg class="contacts__icon" width="16" height="12">
-                            <use href="./img/symbol-defs.svg#envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="contacts__item">
-                    <a href="tel:+380961111111" class="contacts__link">
-                        <svg class="contacts__icon" width="10" height="16">
-                            <use href="./img/symbol-defs.svg#smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
-            
             <button class="mobile-button" type="button" data-menu-button aria-expanded="false" aria-controls="menu-container">
                 <svg class="mobile-button__icon" width="24" height="16" aria-label="Переключатель мобильного меню">
                     <use class="mobile-button__menu" href="./img/symbol-defs.svg#menu-icon"></use>
                     <use class="mobile-button__cross" href="./img/symbol-defs.svg#cross"></use>
                 </svg>
             </button>
+
             <div class="menu-container" id="menu-container" data-menu>
-                <div class="menu-navigation">
+
+                <nav class="page-nav">
                     <ul class="page-nav__list list">
                         <li class="page-nav__item">
                             <a href="./index.html" class="page-nav__link page-nav--current">Студия</a>
@@ -71,21 +40,52 @@
                             <a href="#!" class="page-nav__link">Контакты</a>
                         </li>
                     </ul>
-                </div>
-                <div class="menu-contacts">
-                    <ul class="contacts list">
-                        <li class="contacts__item">
-                            <a href="mailto:info@devstudio.com" class="contacts__link">
-                                info@devstudio.com
-                            </a>
-                        </li>
-                        <li class="contacts__item">
-                            <a href="tel:+380961111111" class="contacts__link">
-                                +38 096 111 11 11
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                </nav>
+                
+                <ul class="contacts list">
+                    <li class="contacts__item">
+                        <a href="mailto:info@devstudio.com" class="contacts__link">
+                            <svg class="contacts__icon" width="16" height="12">
+                                <use href="./img/symbol-defs.svg#envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="tel:+380961111111" class="contacts__link">
+                            <svg class="contacts__icon" width="10" height="16">
+                                <use href="./img/symbol-defs.svg#smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
+                <ul class="social-menu list">
+                    <li class="social-menu__item">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-menu__link link"
+                            aria-label="instagram">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="social-menu__item">
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-menu__link link"
+                            aria-label="twitter">
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="social-menu__item">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-menu__link link"
+                            aria-label="facebook">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="social-menu__item">
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-menu__link link"
+                            aria-label="linkedin">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -152,19 +152,19 @@
                     <ul class="occupation-list list">
                         <li class="occupation-list__item">
                             <div class="occupation-list__thumb">
-                                <img src="./img/box1.jpg" alt="Десктопные приложения" width="370" height="294">
+                                <img srcset="./img/box1.jpg 1x, ./img/box1@2x.jpg 2x" src="./img/box1.jpg" alt="Десктопные приложения" width="370" height="294">
                                 <p class="occupation-list__text">Десктопные приложения</p>
                             </div>
                         </li>
                         <li class="occupation-list__item">
                             <div class="occupation-list__thumb">
-                                <img src="./img/box2.jpg" alt="Мобильные приложения" width="370" height="294">
+                                <img srcset="./img/box2.jpg 1x, ./img/box2@2x.jpg 2x" src="./img/box2.jpg" alt="Мобильные приложения" width="370" height="294">
                                 <p class="occupation-list__text">Мобильные приложения</p>
                             </div>
                         </li>
                         <li class="occupation-list__item">
                             <div class="occupation-list__thumb">
-                                <img src="./img/box3.jpg" alt="Дизайнерские решения" width="370" height="294">
+                                <img srcset="./img/box3.jpg 1x, ./img/box3@2x.jpg 2x" src="./img/box3.jpg" alt="Дизайнерские решения" width="370" height="294">
                                 <p class="occupation-list__text">Дизайнерские решения</p>
                             </div>
                         </li>
@@ -179,7 +179,7 @@
                     <h2 class="team__title">Наша команда</h2>
                     <ul class="team-card list">
                         <li class="team-card__item">
-                            <img class="team-card__image" src="./img/teambox1.jpg" srcset="./img/teambox1.jpg 1x, ./img/teambox1.jpg 2x" alt="Игорь Демьяненко" width="270" height="260">
+                            <img class="team-card__image" src="./img/teambox1.jpg" srcset="./img/teambox1.jpg 1x, ./img/teambox1@2x.jpg 2x" alt="Игорь Демьяненко">
                             <div class="team-card__desc">
                                 <h3 class="team-card__name">Игорь Демьяненко</h3>
                                 <p class="team-card__text" lang="en">Product Designer</p>
@@ -219,7 +219,7 @@
                         </li>
 
                         <li class="team-card__item">
-                            <img class="team-card__image" src="./img/teambox2.jpg" alt="Ольга Репина" width="270" height="260">
+                            <img class="team-card__image" src="./img/teambox2.jpg" srcset="./img/teambox2.jpg 1x, ./img/teambox2@2x.jpg 2x" alt="Ольга Репина">
                             <div class="team-card__desc">
                                 <h3 class="team-card__name">Ольга Репина</h3>
                                 <p class="team-card__text" lang="en">Frontend Developer</p>
@@ -258,7 +258,7 @@
                         </li>
 
                         <li class="team-card__item">
-                            <img class="team-card__image" src="./img/teambox3.jpg" alt="Николай Тарасов" width="270" height="260">
+                            <img class="team-card__image" src="./img/teambox3.jpg" srcset="./img/teambox3.jpg 1x, ./img/teambox3@2x.jpg 2x" alt="Николай Тарасов">
                             <div class="team-card__desc">
                                 <h3 class="team-card__name">Николай Тарасов</h3>
                                 <p class="team-card__text" lang="en">Marketing</p>
@@ -297,7 +297,7 @@
                         </li>
 
                         <li class="team-card__item">
-                            <img class="team-card__image" src="./img/teambox4.jpg" alt="Михаил Ермаков" width="270" height="260">
+                            <img class="team-card__image" src="./img/teambox4.jpg" srcset="./img/teambox4.jpg 1x, ./img/teambox4@2x.jpg 2x" alt="Михаил Ермаков">
                             <div class="team-card__desc">
                                 <h3 class="team-card__name">Михаил Ермаков</h3>
                                 <p class="team-card__text" lang="en">UI Designer</p>
