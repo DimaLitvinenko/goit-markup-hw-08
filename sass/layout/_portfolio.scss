@@ -2,10 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
-
-  @media screen and (max-width: 767.5px) {
-    margin-top: -15px;
-  }
+  margin-left: -8px;
+  margin-top: -15px;
 
   @media screen and (min-width: 768px) {
     justify-content: center;
@@ -18,12 +16,8 @@
 }
 
 .projects-filters__item {
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
-  @media screen and (max-width: 767.5px) {
-    margin-top: 15px;
-  }
+  margin-left: 8px;
+  margin-top: 15px;
 }
 
 .projects-filters__button {
@@ -66,6 +60,7 @@
 }
 
 .projects-cards__item {
+  border: 1px solid #eeeeee;
   @media screen and (max-width: 767.5px) {
     margin-bottom: 30px;
   }
@@ -77,12 +72,15 @@
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / 3 - 30px);
+    width: calc(100% / 3 - 30px);
   }
 }
 
 .projects-cards__link {
   display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-decoration: none;
   transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -106,12 +104,11 @@
 }
 
 .projects-cards__desc {
-  @media screen and (max-width: 400px) {
-    padding: 40px 24px;
-    height: 100%;
-  }
   @media screen and (max-width: 767.5px) {
     padding: 60px 24px;
+  }
+  @media screen and (max-width: 400px) {
+    padding: 40px 24px;
   }
 
   @media screen and (min-width: 768px) {
@@ -124,7 +121,8 @@
   position: absolute;
   top: 0;
   left: 0;
-
+  width: 100%;
+  height: 100%;
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
@@ -138,11 +136,10 @@
 }
 
 .projects-cards__content {
+  flex-grow: 1;
   @media screen and (min-width: 1200px) {
     width: 370px;
   }
-
-  border: 1px solid #eeeeee;
   padding: 20px 24px;
 }
 

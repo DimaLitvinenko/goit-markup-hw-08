@@ -28,7 +28,8 @@ body {
   font-style: normal;
   letter-spacing: 0.03em;
 
-  &.modal-open {
+  &.modal-open,
+  &.mobile-open {
     overflow: hidden;
   }
 }

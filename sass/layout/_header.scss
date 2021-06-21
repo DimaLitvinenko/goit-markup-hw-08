@@ -11,14 +11,12 @@
 
 .page-nav {
   @media screen and (max-width: 767.5px) {
-    margin-bottom: 150px;
+    margin-bottom: 200px;
   }
+
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199.5px) {
-    margin-right: 84px;
   }
 }
 
@@ -56,6 +54,7 @@
   &:hover,
   &:focus {
     outline: none;
+    text-decoration: underline;
     color: $accent-color;
   }
 
@@ -137,6 +136,16 @@
     &:focus {
       color: $accent-color;
       font-size: 34px;
+      outline: none;
+      text-decoration: underline;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      font-size: 28px;
     }
   }
 
@@ -170,14 +179,17 @@
 .social-menu {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -10px;
+  margin-left: -10px;
+
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
+
 .social-menu__item {
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
+  margin-top: 10px;
+  margin-left: 10px;
 
   &:not(:last-child)::after {
     content: '';
@@ -185,6 +197,7 @@
     margin-left: 10px;
   }
 }
+
 .social-menu__link {
   font-size: 18px;
   line-height: 1.2;
