@@ -1059,6 +1059,7 @@ body.modal-open, body.mobile-open {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 60px;
+    align-items: baseline;
   }
 }
 
