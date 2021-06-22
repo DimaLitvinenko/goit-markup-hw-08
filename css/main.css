@@ -1059,6 +1059,11 @@ body.modal-open, body.mobile-open {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
     align-items: baseline;
   }
 }
@@ -1066,7 +1071,6 @@ body.modal-open, body.mobile-open {
 @media screen and (min-width: 1200px) {
   .wrapper {
     display: flex;
-    align-items: baseline;
   }
 }
 
