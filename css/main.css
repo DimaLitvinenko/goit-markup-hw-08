@@ -58,6 +58,12 @@ body.modal-open, body.mobile-open {
   overflow: hidden;
 }
 
+@media screen and (min-width: 768px) {
+  body.modal-open, body.mobile-open {
+    overflow: auto;
+  }
+}
+
 .list {
   list-style: none;
 }
