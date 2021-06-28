@@ -1256,8 +1256,9 @@ body.modal-open, body.mobile-open {
 }
 
 .copy-right {
-  margin-top: 80px;
+  margin-top: 50px;
   text-align: center;
+  font-size: 10px;
 }
 
 .projects-filters {
